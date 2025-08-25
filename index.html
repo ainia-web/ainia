@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2025 JB금융그룹 AI 경진대회</title>
+  <meta name="description" content="2025 JB금융그룹 인재개발팀 주관 AI 경진대회 안내 페이지" />
+  <style>
+    :root{
+      --jb-blue:#0046ff; --jb-navy:#0f1a2b; --jb-mint:#14b8a6; --text:#111827; --muted:#6b7280; --bg:#f8fafc;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; color:var(--text); background:var(--bg)}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+    header{position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid #e5e7eb}
+    .nav{display:flex; align-items:center; justify-content:space-between}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; color:var(--jb-blue)}
+    .brand .dot{width:12px; height:12px; border-radius:50%; background:var(--jb-mint)}
+    nav ul{display:flex; list-style:none; gap:18px; padding:0; margin:0}
+    nav a{font-weight:600; color:#334155}
+    nav a:hover{color:var(--jb-blue)}
+    .hero{padding:72px 24px; background:linear-gradient(120deg,#e8f0ff, #f0fffb)}
+    .hero h1{font-size:clamp(28px,5vw,48px); margin:0 0 12px}
+    .hero p{color:#475569; margin:0 0 24px; font-size:clamp(16px,2.5vw,18px)}
+    .pill{display:inline-flex; align-items:center; gap:10px; background:#fff; border:1px solid #e5e7eb; border-radius:999px; padding:8px 14px; font-size:14px; color:#475569}
+    .cta{display:flex; gap:12px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 18px; border-radius:12px; font-weight:700; border:1px solid transparent}
+    .btn.primary{background:var(--jb-blue); color:#fff}
+    .btn.secondary{background:#fff; color:#111827; border-color:#e5e7eb}
+    section{padding:56px 24px}
+    h2{font-size:clamp(22px,3.5vw,32px); margin:0 0 16px}
+    .sub{color:var(--muted); margin:0 0 24px}
+    .grid{display:grid; gap:16px}
+    @media(min-width:768px){.grid.cols-3{grid-template-columns:repeat(3,1fr)} .grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:18px}
+    .card h3{margin:0 0 8px; font-size:18px}
+    .badge{display:inline-block; font-size:12px; padding:4px 8px; border-radius:999px; background:#eef2ff; color:#3730a3; font-weight:700}
+    .timeline{border-left:3px solid #e5e7eb; padding-left:16px}
+    .timeline .item{margin:10px 0}
+    .timeline .item .date{font-weight:700; color:#111827}
+    .highlight{background:#111827; color:#fff; border-radius:14px; padding:18px}
+    .kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:14px}
+    .kpi{background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:14px; text-align:center}
+    .kpi .num{font-size:28px; font-weight:900; color:var(--jb-blue)}
+    footer{background:#0b1220; color:#e5e7eb; padding:36px 24px}
+    footer a{color:#c7d2fe}
+    .footer-grid{display:grid; gap:16px}
+    @media(min-width:768px){.footer-grid{grid-template-columns:1fr auto}}
+    .small{font-size:13px; color:#94a3b8}
+    .notice{border-left:4px solid var(--jb-blue); background:#fff; padding:12px 14px; border-radius:8px}
+    .faq details{background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:12px 14px}
+    .faq details+details{margin-top:10px}
+    .countdown{font-variant-numeric:tabular-nums; font-weight:800; color:#0f172a}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span>JB AI Challenge</div>
+      <nav aria-label="주요 메뉴">
+        <ul>
+          <li><a href="#about">개요</a></li>
+          <li><a href="#schedule">일정</a></li>
+          <li><a href="#how">참가</a></li>
+          <li><a href="#awards">시상</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="pill" role="note">인재개발팀 주관 · 내부 직원 대상</div>
+      <h1>2025 JB금융그룹 <br/>AI 경진대회</h1>
+      <p>업무 생산성과 창의적 문제 해결을 돕는 AI 활용 사례를 발굴합니다. 코드가 없어도, 현업 아이디어만으로도 참여 가능합니다.</p>
+      <div class="cta">
+        <a class="btn primary" href="#how">지금 참가 신청</a>
+        <a class="btn secondary" href="#guide">제출 가이드 보기</a>
+      </div>
+      <p class="sub" style="margin-top:10px">접수 마감까지 <span id="countdown" class="countdown" aria-live="polite">--일 --:--:--</span></p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>대회 개요</h2>
+      <p class="sub">업무 자동화 · 데이터 분석 · 교육/연수 · 마케팅/영업 지원 등 실무에 바로 쓰이는 AI 활용을 환영합니다.</p>
+      <div class="grid cols-3">
+        <div class="card"><span class="badge">목적</span>
+          <h3>업무 혁신 사례 발굴</h3>
+          <p>AI로 시간을 줄이고 품질을 높이는 실전 아이디어를 찾습니다.</p>
+        </div>
+        <div class="card"><span class="badge">대상</span>
+          <h3>JB금융그룹 임직원</h3>
+          <p>개인/팀 단위 참가 가능(부서 제한 없음).</p>
+        </div>
+        <div class="card"><span class="badge">형식</span>
+          <h3>두 가지 트랙</h3>
+          <p>① 실무 적용 사례 ② 창의 아이디어(프로토타입 포함 가능)</p>
+        </div>
+      </div>
+      <div class="kpis" style="margin-top:16px">
+        <div class="kpi"><div class="num">10/01</div><div>접수 시작</div></div>
+        <div class="kpi"><div class="num">10/20</div><div>접수 마감</div></div>
+        <div class="kpi"><div class="num">10/27</div><div>본선/PT</div></div>
+      </div>
+      <div class="notice" style="margin-top:16px">
+        <strong>제출물:</strong> 5페이지 내외 슬라이드 또는 3분 이내 시연 영상(링크), 요약서 1장
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="container">
+      <h2>일정</h2>
+      <div class="grid cols-2">
+        <div>
+          <div class="timeline">
+            <div class="item"><div class="date">접수: 2025-10-01(수) ~ 2025-10-20(월)</div><div>온라인 양식 제출</div></div>
+            <div class="item"><div class="date">심사: 2025-10-21(화) ~ 2025-10-24(금)</div><div>내/외부 심사위원 평가</div></div>
+            <div class="item"><div class="date">본선/PT: 2025-10-27(월)</div><div>발표 5분, 질의응답 3분</div></div>
+            <div class="item"><div class="date">시상: 2025-10-27(월)</div><div>부행장님 시상 예정</div></div>
+          </div>
+        </div>
+        <div class="highlight">
+          <h3 style="margin:0 0 6px">심사 기준(예시)</h3>
+          <ul style="margin:0 0 10px 18px">
+            <li>실효성/적용성 (30)</li>
+            <li>창의성/완성도 (30)</li>
+            <li>임팩트/파급력 (25)</li>
+            <li>발표/문서력 (15)</li>
+          </ul>
+          <div class="small">※ 내부 지침에 맞춰 조정 가능</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <h2>참가 방법</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>1) 제출 형식</h3>
+          <ul>
+            <li>슬라이드 5p 이내(PDF 권장)</li>
+            <li>시연 영상 링크(선택, 3분 이내)</li>
+            <li>요약서 1p(문제·해결·성과)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>2) 제출 방법</h3>
+          <ol>
+            <li>아래 제출 버튼 클릭</li>
+            <li>공유드라이브/인트라넷 폼 작성</li>
+            <li>파일/링크 업로드 후 제출</li>
+          </ol>
+          <a class="btn primary" style="margin-top:8px" href="#" aria-label="제출 폼 열기">제출 폼 열기</a>
+        </div>
+      </div>
+      <div id="guide" class="card" style="margin-top:14px">
+        <h3>가이드(요약)</h3>
+        <ul>
+          <li>현업 문제 정의 → AI 적용 아이디어 → 결과/효과 순으로 구성</li>
+          <li>화면 캡처·전/후 비교·정량 KPI를 넣으면 가산점</li>
+          <li>보안/개인정보 비식별 처리 준수</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class="container">
+      <h2>시상 내역</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Grand Prix</h3><p>상패 + 부상(예: 100만원)</p></div>
+        <div class="card"><h3>Excellence</h3><p>상패 + 부상(예: 50만원)</p></div>
+        <div class="card"><h3>Innovation</h3><p>상패 + 부상(예: 30만원)</p></div>
+      </div>
+      <p class="small" style="margin-top:8px">※ 실제 시상명/규모는 내부 확정에 따릅니다.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>자주 묻는 질문</h2>
+      <details>
+        <summary>코딩을 못해도 참가 가능한가요?</summary>
+        <p>가능합니다. 프롬프트 설계, 자동화 시나리오, 보고서 생성 등 비개발 과제도 환영합니다.</p>
+      </details>
+      <details>
+        <summary>외부 AI 도구 사용해도 되나요?</summary>
+        <p>가능하나, 은행 보안정책 및 개인정보 보호 기준을 반드시 준수해야 합니다.</p>
+      </details>
+      <details>
+        <summary>팀으로 참가해도 되나요?</summary>
+        <p>네, 개인/팀 모두 가능하며 팀은 2~5인을 권장합니다.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>문의</h2>
+      <div class="card">
+        <p>인재개발팀 (담당: 유니나 차장) · 내선 0000 · <a href="mailto:hrd@example.com">hrd@example.com</a></p>
+        <p class="small">※ 페이지의 일정/시상/제출 링크는 예시입니다. 실제 정보로 교체 후 배포하세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>JB금융그룹 인재개발팀</strong><br/>
+        <span class="small">© 2025 JB Financial Group. All rights reserved.</span>
+      </div>
+      <div class="small">브랜드 로고/색상은 사내 가이드에 맞춰 교체하세요.</div>
+    </div>
+  </footer>
+
+  <script>
+    // === 간단 카운트다운(접수 마감일 변경 시 아래 날짜만 바꾸면 됩니다) ===
+    const deadline = new Date('2025-10-20T18:00:00+09:00'); // KST 마감
+    const el = document.getElementById('countdown');
+    function tick(){
+      const now = new Date();
+      const diff = deadline - now;
+      if(diff <= 0){ el.textContent = '마감되었습니다'; return; }
+      const d = Math.floor(diff/86400000);
+      const h = Math.floor((diff%86400000)/3600000).toString().padStart(2,'0');
+      const m = Math.floor((diff%3600000)/60000).toString().padStart(2,'0');
+      const s = Math.floor((diff%60000)/1000).toString().padStart(2,'0');
+      el.textContent = `${d}일 ${h}:${m}:${s}`;
+      requestAnimationFrame(tick);
+    }
+    tick();
+
+    // 앵커 스무스 스크롤
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const href=a.getAttribute('href');
+        if(href.length>1){ e.preventDefault(); document.querySelector(href).scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
+</body>
+</html>
